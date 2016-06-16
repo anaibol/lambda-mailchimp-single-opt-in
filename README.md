@@ -32,6 +32,6 @@ $ npm run deploy
 
 ```
 $ curl -X POST -H "Content-Type: application/json" \
--d '{ "email": "name@email.com" }' \
+-d '{ "email": "hey@gmail.com", "first_name": "Anibal" }' \
 YOUR_API_GATEWAY_URL
 ```
