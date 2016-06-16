@@ -5,8 +5,9 @@ Authentication
 
 Set your API key and list ID in the .env file. Copy the sample to get started:
 
+```
 $ cp .env.sample .env
-Additional details about authenticating with the MailChimp API is available here.
+```
 
 Deployment
 
