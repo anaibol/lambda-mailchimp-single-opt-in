@@ -1,4 +1,4 @@
-# Mailchimp single opt-in Amazon Lambda function
+# :cloud: Mailchimp single opt-in Amazon Lambda function
 A Lambda function for creating MailChimp subscriptions with single opt-in.
 
 ## Authentication
@@ -17,7 +17,7 @@ There's a handy script included to create your zip archive:
 $ npm start
 ```
 
-## Build (Babel -> ES5)
+## Build (Babel ⇒ ES5)
 
 ```
 $ npm run build
