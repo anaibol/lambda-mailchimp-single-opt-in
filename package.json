@@ -1,0 +1,21 @@
+{
+  "name": "mailchimp-suscribe",
+  "description": "A Lambda function for creating MailChimp subscriptions",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node-lambda setup",
+    "run": " babel index.babel.js --out-file index.js && node-lambda run",
+    "deploy": "babel index.babel.js --out-file index.js && node-lambda deploy"
+  },
+  "author": "Taylor Briggs",
+  "license": "MIT",
+  "dependencies": {
+    "email-verify": "0.0.18",
+    "mailchecker": "3.0.8",
+    "mailchimp": "1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rebelmail/node-lambda-template.git"
+  }
+}
