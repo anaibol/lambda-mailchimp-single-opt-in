@@ -1,5 +1,5 @@
-# :cloud: Mailchimp single opt-in Amazon Lambda function
-A Lambda function for creating MailChimp subscriptions with single opt-in.
+# :cloud: Mailchimp single opt-in Lambda
+An Amazon Lambda function for creating MailChimp subscriptions with single opt-in.
 
 
 ## Authentication
