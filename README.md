@@ -1,7 +1,7 @@
 # Mailchimp single opt-in Amazon Lambda function
 A Lambda function for creating MailChimp subscriptions with single opt-in.
 
-Authentication
+## Authentication
 
 Set your API key and list ID in the .env file. Copy the sample to get started:
 
@@ -9,7 +9,7 @@ Set your API key and list ID in the .env file. Copy the sample to get started:
 $ cp .env.sample .env
 ```
 
-Deployment
+## Deployment
 
 There's a handy script included to create your zip archive:
 
@@ -17,13 +17,13 @@ There's a handy script included to create your zip archive:
 $ npm start
 ```
 
-Build (Babel -> ES5)
+## Build (Babel -> ES5)
 
 ```
 $ npm run build
 ```
 
-Deploy
+## Deploy
 
 ```
 $ npm run deploy
