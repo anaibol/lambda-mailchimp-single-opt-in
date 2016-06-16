@@ -12,16 +12,24 @@ Deployment
 
 There's a handy script included to create your zip archive:
 
+```
 $ npm start
+```
 
 Build (Babel -> ES5)
 
+```
 $ npm run build
+```
 
 Deploy
 
+```
 $ npm run deploy
+```
 
+```
 $ curl -X POST -H "Content-Type: application/json" \
 -d '{ "email": "name@email.com" }' \
 YOUR_API_GATEWAY_URL
+```
