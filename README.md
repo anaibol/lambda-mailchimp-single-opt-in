@@ -1,6 +1,6 @@
 # :cloud: Mailchimp single opt-in Lambda
 An Amazon Lambda function for creating MailChimp subscriptions with single opt-in.
-
+Based on https://github.com/TaylorBriggs/mailchimp-lambda and https://github.com/motdotla/node-lambda.
 
 ## Authentication
 
@@ -8,6 +8,10 @@ Set your API key and list ID in the .env file. Copy the sample to get started:
 
 ```
 $ cp .env.sample .env
+
+API_KEY=YOUR_API_KEY
+LIST_ID=YOUR_LIST_ID
+
 ```
 
 ## Deployment
