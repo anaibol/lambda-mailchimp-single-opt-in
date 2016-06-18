@@ -1,15 +1,15 @@
 import { MailChimpAPI } from 'mailchimp'
-import mailchecker from 'mailchecker'
-import emailVerify from 'email-verify'
+import mailChecker from 'mailchecker'
+import { verify } from 'email-verify'
 
 const { API_KEY, LIST_ID } = process.env
 
-const api = new MailChimpAPI(API_KEY, { version : '2.0' })
+const api = new MailChimpAPI(API_KEY, { version: '2.0' })
 
 export function handler({ email, first_name }, context, cb) {
   if (!email) return cb(new Error('mail is empty'))
 
-  if (!MailChecker.isValid(email)) {
+  if (!mailChecker.isValid(email)) {
     return cb(new Error('mail is invalid'))
   }
 

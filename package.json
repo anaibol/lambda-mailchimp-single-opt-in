@@ -17,5 +17,8 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/rebelmail/node-lambda-template.git"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "6.9.0"
   }
 }

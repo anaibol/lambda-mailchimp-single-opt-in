@@ -13,8 +13,6 @@ var _mailchecker2 = _interopRequireDefault(_mailchecker);
 
 var _emailVerify = require('email-verify');
 
-var _emailVerify2 = _interopRequireDefault(_emailVerify);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _process$env = process.env;
@@ -30,11 +28,11 @@ function handler(_ref, context, cb) {
 
   if (!email) return cb(new Error('mail is empty'));
 
-  if (!MailChecker.isValid(email)) {
+  if (!_mailchecker2.default.isValid(email)) {
     return cb(new Error('mail is invalid'));
   }
 
-  verify(email, function (err, info) {
+  (0, _emailVerify.verify)(email, function (err, info) {
     if (err) return cb(err);
 
     var merge_vars = {
