@@ -32,13 +32,15 @@ function handler(_ref, context, cb) {
     return cb(new Error('mail is invalid'));
   }
 
-  (0, _emailVerify.verify)(email, function (err, info) {
-    if (err) return cb(err);
+  // verify(email, (err, info) => {
+  // if (err) {
+  //   return cb(err)
+  // }
 
-    var merge_vars = {
-      FNAME: first_name
-    };
+  var merge_vars = {
+    FNAME: first_name
+  };
 
-    api.call('lists', 'subscribe', { id: LIST_ID, email: { email: email }, merge_vars: merge_vars, double_optin: false, update_existing: true, send_welcome: true }, cb);
-  });
+  api.call('lists', 'subscribe', { id: LIST_ID, email: { email: email }, merge_vars: merge_vars, double_optin: false, update_existing: true, send_welcome: true }, cb);
+  // })
 }

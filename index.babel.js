@@ -13,13 +13,16 @@ export function handler({ email, first_name }, context, cb) {
     return cb(new Error('mail is invalid'))
   }
 
-  verify(email, (err, info) => {
-    if (err) return cb(err)
+  // verify(email, (err, info) => {
+    // if (err) {
+    //   return cb(err)
+    // }
 
     const merge_vars = {
       FNAME: first_name
     }
 
+
     api.call('lists', 'subscribe', { id: LIST_ID, email: { email }, merge_vars, double_optin: false, update_existing: true, send_welcome: true }, cb)
-  })
+  // })
 }
